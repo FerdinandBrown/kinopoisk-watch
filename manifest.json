@@ -2,10 +2,16 @@
   "manifest_version": 3,
   "name": "Kinopoisk .ru → .cx",
   "version": "1.0",
-  "description": "Adds a button that opens the same page on kinopoisk.cx",
+  "description": "Adds a button to open kinopoisk.cx",
+  "permissions": ["activeTab"],
   "content_scripts": [
     {
-      "matches": ["*://www.kinopoisk.ru/*", "*://kinopoisk.ru/*"],
+      "matches": [
+        "*://kinopoisk.ru/film/*",
+        "*://www.kinopoisk.ru/film/*",
+        "*://kinopoisk.ru/series/*",
+        "*://www.kinopoisk.ru/series/*"
+      ],
       "js": ["content.js"]
     }
   ]
