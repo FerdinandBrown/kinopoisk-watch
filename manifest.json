@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Kinopoisk .ru → .cx",
   "version": "1.0",
   "description": "Adds a button that opens the same page on kinopoisk.cx",
