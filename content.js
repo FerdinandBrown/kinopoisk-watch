@@ -1,11 +1,4 @@
-function isValidPage() {
-  const path = window.location.pathname;
-  return path.startsWith("/film/") || path.startsWith("/series/");
-}
-
 function addButton() {
-  if (!isValidPage()) return;
-
   const button = document.createElement("button");
   button.textContent = "Смотреть";
 
