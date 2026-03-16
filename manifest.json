@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Kinopoisk .ru → .cx",
+  "version": "1.0",
+  "description": "Adds a button that opens the same page on kinopoisk.cx",
+  "content_scripts": [
+    {
+      "matches": ["*://www.kinopoisk.ru/*", "*://kinopoisk.ru/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
