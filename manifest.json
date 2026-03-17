@@ -3,14 +3,21 @@
   "name": "Kinopoisk .ru → .cx",
   "version": "1.0",
   "description": "Adds a button to open kinopoisk.cx",
-  "permissions": ["activeTab"],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@your-email.com", 
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
   "content_scripts": [
     {
       "matches": [
-        "*://kinopoisk.ru/film/*",
-        "*://www.kinopoisk.ru/film/*",
-        "*://kinopoisk.ru/series/*",
-        "*://www.kinopoisk.ru/series/*"
+        "*://*.kinopoisk.ru/film/*",
+        "*://*.kinopoisk.ru/series/*"
       ],
       "js": ["content.js"]
     }
