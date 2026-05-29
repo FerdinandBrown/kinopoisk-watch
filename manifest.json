@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Kinopoisk .ru → .cx",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Adds a button to open kinopoisk.cx",
 
   "browser_specific_settings": {
