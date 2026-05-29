@@ -15,7 +15,9 @@ function addButton() {
   button.style.borderRadius = "6px";
 
   button.onclick = () => {
-    const newUrl = window.location.href.replace("kinopoisk.ru", "kinopoisk.cx");
+    const url = new URL(window.location.href);
+    url.search = ""; 
+    const newUrl = url.toString().replace("kinopoisk.ru", "kinopoisk.cx");
     window.location.href = newUrl;
   };
 
@@ -27,3 +29,4 @@ if (document.readyState === "loading") {
 } else {
   addButton();
 }
+
